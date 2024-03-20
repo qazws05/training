@@ -1,0 +1,4 @@
+change
+| extend group = ['Assignment group']
+| summarize Count = count() by group,  ['Type']
+| order by group asc, ['Type']
